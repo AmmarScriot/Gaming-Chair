@@ -24,7 +24,7 @@ F6.BackgroundTransparency = 0.500
 F6.Position = UDim2.new(0.806384563, 0, 0.0453872904, 0)
 F6.Size = UDim2.new(0.159186631, 0, 0.285657197, 0)
 F6.Font = Enum.Font.SourceSans
-F6.Text = "👀"
+F6.Text = "Gaming Chair"
 F6.TextColor3 = Color3.fromRGB(0, 0, 0)
 F6.TextScaled = true
 F6.TextSize = 30.000
@@ -39,7 +39,7 @@ UITextSizeConstraint.Parent = F6
 UITextSizeConstraint.MaxTextSize = 30
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
-local Window = Library.CreateLib("Gaming Chair V1.1 (testing)", "BloodTheme")
+local Window = Library.CreateLib("Gaming Chair V1.1", "BloodTheme")
 
 -- Tabs
 
@@ -375,7 +375,7 @@ F6.BackgroundTransparency = 0.500
 F6.Position = UDim2.new(0.806384563, 0, 0.0453872904, 0)
 F6.Size = UDim2.new(0.159186631, 0, 0.285657197, 0)
 F6.Font = Enum.Font.SourceSans
-F6.Text = "👀"
+F6.Text = "Gaming Chair"
 F6.TextColor3 = Color3.fromRGB(0, 0, 0)
 F6.TextScaled = true
 F6.TextSize = 30.000
@@ -393,3 +393,64 @@ end)
 Section7:NewButton("Zen Hub", "Very Good", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
 end)
+
+Section3:NewButton("Hitbox (few game work) ", "sus", function()
+    _G.HeadSize = 20
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+end)
+
+local Tab6 = Window:NewTab("Ramdom :)")
+local Section8 = Tab6:NewSection("If you dont want is just dont click")
+
+Section8:NewButton("Dont click", "DONT CLICK", function()
+   local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"),true))()
+notifications:notify{
+    Title = "Why do you click this",
+    Description = "Type /console in chat",
+    Accept = {
+        Text = "Ok"
+    },
+    Length = 10
+}
+print("Get troll :)")
+end)
+
+Section8:NewButton("CODM Hack Garenal", "yes (troll) ", function()
+    setclipboard("https://t.me/trungthaicodm/304620")
+end)
+
+Section8:NewButton("CODM Hack Global", "👀", function()
+    setclipboard("https://t.me/trungthaicodm/312553")
+end)
+
+Section8:NewButton("Key for that hack (click pin) ", "very op", function()
+    setclipboard("https://t.me/MODGAMEVN6789")
+end)
+
+Section5:NewButton("Corrupt Door", "useless ", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ZNMP76Ys"))()
+end)
+
+local Tab7 = Window:NewTab("Pet Simulator X")
+local Section9 = Tab7:NewSection("Pet Simulator X")
+
+Section9:NewButton("Pet Sim X Hoho Hub", "very good", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+    
